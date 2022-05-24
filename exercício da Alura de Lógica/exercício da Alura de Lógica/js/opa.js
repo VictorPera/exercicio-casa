@@ -80,8 +80,7 @@ document.write("Consumo com Álcool é de: " + consumoComAlcool + " km/L <br><br
 //
 
 //exemplo de "function" sem parâmetro antes dos exercícios// //Para declarar funções usamos o "function",ele vai sempre no começo do código,sempre tem que ser um verbo pois indica ação,e usamos chaves para englobar o código q pertence a aquela função,nome de funções é tão importante quanto o código//
-function puloLinha()
-{
+function puloLinha(){
     document.write("<br><br>");
 } 
 
@@ -93,8 +92,8 @@ document.write("testetesteteste");
 puloLinha();
 
 //exemplo de "function" com parâmetro// //Funções com parâmetro servem para deixar o código mais legível e também é possível anexar uma função dentro da outra//
-function mostra(frase)
-{
+
+function mostra(frase){
     document.write(frase);
     puloLinha();
 }
@@ -104,4 +103,76 @@ var ano = 2005;
 mostra("Maria Julia tem: " + (2022 - ano) + " anos e é a mulher mais linda que eu já vi <3!!" );
 mostra("ola pessoal!!leia em espanhol");
 
+//exercício //textos dentro de funções são chamados de instruções//
+
+function fazPegadinha(){
+    alert("Olá");
+    alert("amiga!");
+    alert("Tá");
+    alert("bastante");
+    alert("entediada?");
+    alert("Em ficar");
+    alert("Clicando em");
+    alert("Ok");
+    alert("né?");
+}
+//só é preciso chamar a função 1 vez que todas as instruções serão chamadas, e se quiser-mos uma repetição da função podemos chama-lá de novo colocando seu nome mais de uma vez no código
+
+
+function pulo(){
+    document.write("<br><br>");
+}
+
+function frase(frase) {
+    document.write(frase);
+    pulo();
+}
+
+var titulo = ("Bem-vindo ao meu programa!");
+
+frase("<h1>" + titulo + "</h1>");
+frase("Vocês não sabem o que tive que aprender para fazer isso!");
+frase("Contudo, assistindo os vídeos e estudando ...");
+frase("Eu vou mais longe!");
+
+function exibirAler(){
+    alert("***" + msg + "***");
+}
+
+var idade1 = 10;
+var idade2 = 20;
+var idade3 = 30;
+var totalIdades = idade1 + idade2 + idade3;
+var mediaIdades = totalIdades/3;
+("***Total de idades é " + totalIdades + "***");
+("***A média das idades é " +  mediaIdades + "***");
+
+//
+function cup(){
+    document.write("<br><br>");
+}
+
+function pedrinho(pedro){
+    document.write(pedro);
+    cup();
+}
+
+var idadeVictor = 17;
+var idadeMj = 16;
+var diferfenca = (idadeVictor - idadeMj);
+
+pedrinho("Nossa diferença de idade é: " + (diferenca) + " ano");
+
+function puloLinha(){
+    document.write("<br><br>");
+}
+
+function mostra(frase){
+    document.write(frase);
+}
+
+var ultimosAnos = 2022 - 1500;
+var mediaUltimosAnos = ultimosAnos/28;
+
+mostra("Desde 1500 até o ano atual " + Math.round(mediaUltimosAnos) + " gerações passaram pelo Brasil");
 
